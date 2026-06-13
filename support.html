@@ -5,35 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WobblyPaint 95 — Support</title>
   <style>
+    :root {
+      --accent: #2b7a78;
+      --bg: #f7f7f5;
+      --card: #ffffff;
+      --text: #222;
+      --muted: #666;
+      --border: #e2e2e0;
+    }
+    * { box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #222;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
     }
-    h1 { font-size: 1.8em; }
-    h2 { font-size: 1.2em; margin-top: 1.5em; }
-    footer { margin-top: 3em; font-size: 0.9em; color: #666; }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    header img {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      image-rendering: pixelated;
+      border: 1px solid var(--border);
+    }
+    header h1 {
+      font-size: 1.4em;
+      margin: 0;
+    }
+    header p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.95em;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.05em;
+      margin-top: 0;
+      color: var(--accent);
+    }
+    h3 {
+      font-size: 1em;
+      margin: 20px 0 6px;
+    }
+    h3:first-child { margin-top: 0; }
+    .contact-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.95em;
+      font-weight: 600;
+      border: 1px solid var(--border);
+    }
+    .btn-email {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .btn-discord {
+      background: #5865F2;
+      color: #fff;
+      border-color: #5865F2;
+    }
+    a { color: var(--accent); }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.85em;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
-  <h1>WobblyPaint 95 — Support</h1>
+  <div class="wrap">
+    <header>
+      <img src="logo.png" alt="WobblyPaint 95 logo" />
+      <div>
+        <h1>WobblyPaint 95</h1>
+        <p>Support</p>
+      </div>
+    </header>
 
-  <p>Need help with WobblyPaint 95? We're happy to assist.</p>
+    <div class="card">
+      <h2>Get in touch</h2>
+      <p>Need help, found a bug, or have feedback or feature ideas? We'd love to hear from you.</p>
+      <div class="contact-buttons">
+        <a class="btn btn-email" href="mailto:chouillustration@gmail.com">Email Support</a>
+        <a class="btn btn-discord" href="https://discord.gg/e9MdmN4xmU">Join our Discord</a>
+      </div>
+    </div>
 
-  <h2>Contact</h2>
-  <p>Email us at <a href="mailto:chourouk244@gmail.com">chourouk244@gmail.com</a> and we'll get back to you as soon as possible.</p>
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
 
-  <h2>Frequently Asked Questions</h2>
+      <h3>Where do my exported drawings, GIFs, and recordings go?</h3>
+      <p>When you export a drawing, animated GIF, screen recording, or timelapse, WobblyPaint 95 saves it straight to your device's Photos app, inside a "WobblyPaint 95" album.</p>
 
-  <h2>Where do my exported drawings and animations go?</h2>
-  <p>When you export a drawing, GIF, or recording, WobblyPaint 95 saves it to your device's Photos app, inside a "WobblyPaint 95" album.</p>
+      <h3>The app can't save to my Photos library</h3>
+      <p><strong>iOS:</strong> Settings &gt; WobblyPaint 95 &gt; Photos &gt; set to "Add Photos Only" or "All Photos".</p>
+      <p><strong>Android:</strong> Settings &gt; Apps &gt; WobblyPaint 95 &gt; Permissions &gt; allow Photos/Media access.</p>
 
-  <h2>The app can't save to my Photos library</h2>
-  <p>Make sure WobblyPaint 95 has permission to access your Photos. On iOS: Settings &gt; WobblyPaint 95 &gt; Photos &gt; set to "Add Photos Only" or "All Photos". On Android: Settings &gt; Apps &gt; WobblyPaint 95 &gt; Permissions &gt; allow storage/media access.</p>
+      <h3>Can I use layers, custom brushes, and undo/redo?</h3>
+      <p>Yes — WobblyPaint 95 supports multiple layers, a range of brushes (including spray and bucket fill), shape and line tools with an optional grid, and full undo/redo history.</p>
 
-  <footer>WobblyPaint 95 &mdash; Support</footer>
+      <h3>Does WobblyPaint 95 require an account or internet connection?</h3>
+      <p>No. WobblyPaint 95 works fully offline and doesn't require signing in or creating an account.</p>
+
+      <h3>I have a feature request or found a bug</h3>
+      <p>Reach out via email or Discord above — we read every message and use your feedback to plan updates.</p>
+    </div>
+
+    <footer>WobblyPaint 95 &mdash; Support</footer>
+  </div>
 </body>
 </html>
